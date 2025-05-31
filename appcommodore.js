@@ -71,7 +71,7 @@ async function downloadPDF(url, filename) {
 
     return new Promise((resolve, reject) => {
       writer.on("finish", () => {
-        console.log(`✅ Downloaded: ${filename}`);
+        console.log(`OK Downloaded: ${filename}`);
         resolve();
       });
       writer.on("error", reject);
